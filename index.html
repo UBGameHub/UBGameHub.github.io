@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Hub - Slip</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #1e1e2f, #3b3b58);
+      color: #f0f0f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #ffda79;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #cfcfe6;
+    }
+    .card {
+      background: #2a2a40;
+      border-radius: 15px;
+      padding: 25px;
+      max-width: 700px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+      margin-bottom: 20px;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h2 {
+      color: #ffda79;
+      margin-bottom: 15px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #ffda79;
+      color: #1e1e2f;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+    .btn:hover {
+      background: #ffd34d;
+    }
+    ul {
+      list-style: disc;
+      margin-left: 20px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎮 Welcome to Game Hub</h1>
+    <p>Play Slip and test your skills!</p>
+  </header>
+
+  <div class="card">
+    <h2>Slip</h2>
+    <p>A fast-paced reflex and precision game. Can you keep control and beat your high score?</p>
+    <a href="/slip/index.html" class="btn">▶ Play Slip</a>
+  </div>
+
+  <div class="card">
+    <h2>How to Play</h2>
+    <ul>
+      <li>Use <b>arrow keys</b> (or WASD) to move your character/shape.</li>
+      <li>Avoid obstacles and don’t fall off the path.</li>
+      <li>Stay focused — the game gets faster over time.</li>
+      <li>Try to survive as long as possible to set a new high score.</li>
+    </ul>
+  </div>
+</body>
+</html>
