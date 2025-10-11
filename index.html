@@ -3,92 +3,100 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Game Hub - Slip</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
-    body {
-      background: linear-gradient(135deg, #1e1e2f, #3b3b58);
-      color: #f0f0f5;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-      padding: 20px;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      color: #ffda79;
-    }
-    header p {
-      font-size: 1.1rem;
-      color: #cfcfe6;
-    }
-    .card {
-      background: #2a2a40;
-      border-radius: 15px;
-      padding: 25px;
-      max-width: 700px;
-      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
-      margin-bottom: 20px;
-      transition: transform 0.2s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card h2 {
-      color: #ffda79;
-      margin-bottom: 15px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 12px 20px;
-      background: #ffda79;
-      color: #1e1e2f;
-      font-weight: bold;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background 0.2s ease;
-    }
-    .btn:hover {
-      background: #ffd34d;
-    }
-    ul {
-      list-style: disc;
-      margin-left: 20px;
-      line-height: 1.6;
-    }
-  </style>
+  <title>GameHub - Fun Browser Games</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <h1>🎮 Welcome to Game Hub</h1>
-    <p>Play Slip and test your skills!</p>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-blue-600 text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">GameHub</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#" class="hover:underline">Games</a></li>
+          <li><a href="#" class="hover:underline">About</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <div class="card">
-    <h2>Slip</h2>
-    <p>A fast-paced reflex and precision game. Can you keep control and beat your high score?</p>
-    <a href="/slip/index.html" class="btn">▶ Play Slip</a>
-  </div>
+  <!-- Hero Section -->
+  <section class="bg-white py-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-extrabold mb-4">Play Fun and Addictive Games</h2>
+      <p class="text-lg text-gray-600">Jump into action with browser-based games—no download needed!</p>
+    </div>
+  </section>
 
-  <div class="card">
-    <h2>How to Play</h2>
-    <ul>
-      <li>Use <b>arrow keys</b> to move your circle.</li>
-      <li>Try to match the colors.</li>
-      <li>Stay focused — the game gets faster over time.</li>
-      <li>Try to survive as long as possible to set a new high score.</li>
-    </ul>
-  </div>
+  <!-- Game Cards Section -->
+  <section class="py-12 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      
+      <!-- SLIP Game Card -->
+      <a href="https://gamemakerubg.github.io/slip/index.html" target="_blank" class="bg-white rounded-lg shadow hover:shadow-lg transition duration-300">
+        <img src="https://placehold.co/400x200/1E293B/ffffff?text=SLIP&font=poppins" alt="SLIP Game" class="w-full h-48 object-cover rounded-t-lg">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">SLIP</h3>
+          <p class="text-gray-600 text-sm">Dodge, slide, and survive in this fast-paced, slippery adventure!</p>
+        </div>
+      </a>
+
+      <!-- Game Card 1 -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition duration-300">
+        <img src="https://placehold.co/400x200/3B82F6/ffffff?text=Block+Breaker&font=raleway" alt="Block Breaker" class="w-full h-48 object-cover rounded-t-lg">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Block Breaker</h3>
+          <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+        </div>
+      </div>
+
+      <!-- Game Card 2 -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition duration-300">
+        <img src="https://placehold.co/400x200/F97316/ffffff?text=Rocket+Runner&font=roboto" alt="Rocket Runner" class="w-full h-48 object-cover rounded-t-lg">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Rocket Runner</h3>
+          <p class="text-gray-600 text-sm">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
+        </div>
+      </div>
+
+      <!-- Game Card 3 -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition duration-300">
+        <img src="https://placehold.co/400x200/10B981/ffffff?text=Maze+Escape&font=montserrat" alt="Maze Escape" class="w-full h-48 object-cover rounded-t-lg">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Maze Escape</h3>
+          <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat.</p>
+        </div>
+      </div>
+
+      <!-- Game Card 4 -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition duration-300">
+        <img src="https://placehold.co/400x200/EAB308/000000?text=Puzzle+Drop&font=open+sans" alt="Puzzle Drop" class="w-full h-48 object-cover rounded-t-lg">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Puzzle Drop</h3>
+          <p class="text-gray-600 text-sm">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
+        </div>
+      </div>
+
+      <!-- Game Card 5 -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition duration-300">
+        <img src="https://placehold.co/400x200/C084FC/ffffff?text=Tower+Climb&font=oswald" alt="Tower Climb" class="w-full h-48 object-cover rounded-t-lg">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Tower Climb</h3>
+          <p class="text-gray-600 text-sm">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white py-6 mt-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      &copy; 2025 GameHub. All rights reserved.
+    </div>
+  </footer>
+
 </body>
 </html>
