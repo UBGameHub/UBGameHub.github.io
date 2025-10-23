@@ -1,125 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GameHub - Fun HTML5 Games</title>
-
-  <!-- Bootstrap 5 CSS CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Game Hub - Your Gaming Destination</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3b82f6", // Blue-500
+              secondary: "#f97316", // Orange-500
+              "background-light": "#f1f5f9", // Slate-100
+              "background-dark": "#0B1229", // Custom Dark Blue
+              "surface-dark": "#1E293B", // Slate-800
+              "text-light": "#1e293b", // Slate-800
+              "text-dark": "#f8fafc", // Slate-50
+              "text-muted-dark": "#94a3b8", // Slate-400
+            },
+            fontFamily: {
+              display: ["Space Grotesk", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "0.75rem",
+              xl: "1rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
 </head>
-<body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-      <a class="navbar-brand" href="#">GameHub Unblocked</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Games</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="py-5 text-center bg-light">
-    <div class="container">
-      <h1 class="display-4 fw-bold">Play Fun and Addictive Browser Games</h1>
-      <p class="lead text-muted">Jump into action with unblocked HTML5 games—no download needed!</p>
-    </div>
-  </section>
-
-  <!-- Game Cards -->
-  <section class="py-5">
-    <div class="container">
-      <div class="row g-4">
-
-        <!-- SLIP Game -->
-        <div class="col-sm-6 col-md-4">
-          <a href="https://ubgamehub.github.io/0001/" target="_blank" class="text-decoration-none text-dark">
-            <div class="card h-100">
-              <img src="https://placehold.co/400x200/1E293B/ffffff?text=SLIP&font=poppins" class="card-img-top" alt="SLIP Game">
-              <div class="card-body">
-                <h5 class="card-title">SLIP</h5>
-                <p class="card-text">Use the arrow keys to match the color wheel to the colors!</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <!-- Game 1 -->
-        <div class="col-sm-6 col-md-4">
-          <div class="card h-100">
-            <img src="https://placehold.co/400x200/3B82F6/ffffff?text=Block+Breaker&font=raleway" class="card-img-top" alt="Block Breaker">
-            <div class="card-body">
-              <h5 class="card-title">Block Breaker</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Game 2 -->
-        <div class="col-sm-6 col-md-4">
-          <div class="card h-100">
-            <img src="https://placehold.co/400x200/F97316/ffffff?text=Rocket+Runner&font=roboto" class="card-img-top" alt="Rocket Runner">
-            <div class="card-body">
-              <h5 class="card-title">Rocket Runner</h5>
-              <p class="card-text">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Game 3 -->
-        <div class="col-sm-6 col-md-4">
-          <div class="card h-100">
-            <img src="https://placehold.co/400x200/10B981/ffffff?text=Maze+Escape&font=montserrat" class="card-img-top" alt="Maze Escape">
-            <div class="card-body">
-              <h5 class="card-title">Maze Escape</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Game 4 -->
-        <div class="col-sm-6 col-md-4">
-          <div class="card h-100">
-            <img src="https://placehold.co/400x200/EAB308/000000?text=Puzzle+Drop&font=open+sans" class="card-img-top" alt="Puzzle Drop">
-            <div class="card-body">
-              <h5 class="card-title">Puzzle Drop</h5>
-              <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Game 5 -->
-        <div class="col-sm-6 col-md-4">
-          <div class="card h-100">
-            <img src="https://placehold.co/400x200/C084FC/ffffff?text=Tower+Climb&font=oswald" class="card-img-top" alt="Tower Climb">
-            <div class="card-body">
-              <h5 class="card-title">Tower Climb</h5>
-              <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-primary text-white text-center py-4">
-    <div class="container">
-      &copy; 2025 GameHub. All rights reserved.
-    </div>
-  </footer>
-
-  <!-- Bootstrap 5 JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<body class="bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-7xl flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-surface-dark px-6 lg:px-10 py-4">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-3 text-text-dark" href="#">
+<span class="material-symbols-outlined text-primary text-4xl">joystick</span>
+<h1 class="text-3xl font-bold leading-tight tracking-[-0.015em]">GameHub</h1>
+</a>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-text-dark text-lg font-medium leading-normal hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-text-dark text-lg font-medium leading-normal hover:text-primary transition-colors" href="#">All Games</a>
+<a class="text-text-dark text-lg font-medium leading-normal hover:text-primary transition-colors" href="#">New Games</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-4 md:gap-8 items-center">
+<label class="flex flex-col min-w-40 !h-11 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-text-muted-dark flex border-none bg-surface-dark items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-dark focus:outline-0 focus:ring-0 border-none bg-surface-dark focus:border-none h-full placeholder:text-text-muted-dark px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Search Games" value=""/>
+</div>
+</label>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-11 px-5 bg-secondary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-opacity">
+<span class="truncate">Sign Up</span>
+</button>
+</div>
+</header>
+<main class="flex-1">
+<div class="mt-8">
+<div class="flex flex-col gap-4 text-center py-12 px-4">
+<h1 class="text-text-dark text-5xl font-black leading-tight tracking-[-0.033em] md:text-7xl">Play Fun and Addictive Browser Games</h1>
+<p class="text-text-muted-dark text-xl font-normal leading-normal max-w-3xl mx-auto">Jump into action with unblocked HTML5 games—no download needed! BTW This is from Humaidh</p>
+</div>
+<div class="py-12">
+<div class="flex justify-between items-center px-4 mb-8">
+<h3 class="text-4xl font-bold text-text-dark">Popular Games</h3>
+<a class="text-primary text-lg font-medium hover:underline" href="#">View All</a>
+</div>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-8 p-4">
+<a class="flex flex-col gap-4 group" href="UBGameHub.github.io/0001">
+<div class="bg-cover bg-center rounded-xl aspect-video overflow-hidden transform group-hover:scale-105 transition-transform duration-300" data-alt="A warrior stands on a cliff overlooking a vast fantasy landscape for the game Odyssey" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC4e3Da1z3GJ2cKLGXW5oBgQM_mPefFsIdApezHXDQ8ClT1EhV3mfiGQJVt8hgqIoL9yEjxZwQxGbj-E_7rGdti4tt6XRpTTyQBzZ17YvA6G6CJwWl5lXJhP7yoQfJZ7WiNmIGSNTyZtG9-Lga2M-5Xr4g8hkAISMk-hcheccEzkOlKz_FUY2hCzP2iOSutU_t3yc6bj59TmnnbvnwZdDyznJP_PY0KLucyOq0CtaAbjz_F8PQER6njPMmp3kD-nmly8Is5yE3yH-Rv");'></div>
+<div class="flex flex-col gap-1">
+<p class="text-text-dark text-2xl font-bold leading-tight line-clamp-1">Slip</p>
+<p class="text-text-muted-dark text-base">Rotate the coloured circle.</p>
+</div>
+</a>
+<a class="flex flex-col gap-4 group" href="#">
+<div class="bg-cover bg-center rounded-xl aspect-video overflow-hidden transform group-hover:scale-105 transition-transform duration-300" data-alt="An abstract representation of complex puzzles and code for the game Cipher" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB83BFxKFY9fSYi5ZGJIefZ9_Mf3pvDioZQ-e0AVskaTD49i9VMPLDyq2URID1kyWbdBWUPT7_hUjt31KGcNeERqTMobxUH_zNLkMcu3QhbQRTANy3MBVr3D5s36ONZK2tVzCx-eHbLAAiT9z1QTLc-9X3qtwmLYvq9wHrPIL3dn1L-lafR2rZ2meXjun-Rbn5S6wvSQOwYAojL2jPKzorRKBRwzmnvLF4nN0xTVpgFxeqNCUO7xzlDaHojxPEO_34Z1DgcUlCrvOab");'></div>
+<div class="flex flex-col gap-1">
+<p class="text-text-dark text-2xl font-bold leading-tight line-clamp-1">Cipher</p>
+<p class="text-text-muted-dark text-base">Solve mind-bending puzzles.</p>
+</div>
+</a>
+<a class="flex flex-col gap-4 group" href="#">
+<div class="bg-cover bg-center rounded-xl aspect-video overflow-hidden transform group-hover:scale-105 transition-transform duration-300" data-alt="A futuristic spaceship flying through a nebula for the game Nova" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDNU2B_skGAKbQrLYrKlXxKv5sDSD6A6G0BIBNTERN81064PspLI0sba5H-3rLCP7tP30LdYMz-BCJhDES6-JbeGFUh6s2Po7BMxIEKEwOzZ9acOkeoT0RsuEW0WH3iDv_GN7rddQg8eak0XeQp5eO208Rq0fdV5Wle5x2sk_QFIB_czoQEpbxh0JIuPzobkYaYyOzDkOaIORUsPECu_USfvRSibsioj30IBGNbNbTNQdwy8gRgDYxPmU5Zf6t8XePmYV9rq64VKLVX");'></div>
+<div class="flex flex-col gap-1">
+<p class="text-text-dark text-2xl font-bold leading-tight line-clamp-1">Nova</p>
+<p class="text-text-muted-dark text-base">Conquer the galaxy.</p>
+</div>
+</a>
+<a class="flex flex-col gap-4 group" href="#">
+<div class="bg-cover bg-center rounded-xl aspect-video overflow-hidden transform group-hover:scale-105 transition-transform duration-300" data-alt="A stylized image of a mountain peak for the game Apex" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDZa3xpyRy5zBvKUHyKPjuig1fzDysS8_DDg9nLGSVxod1Cipjt_4KhFSMirRvAoRf1M0olB8UGbXDnGC5NecFAHv5cvsnAPZDHc9W5XeELDZ25sYM5C_bN76IO4H0dCINGMy7ihnVUjByjURVWnu-IGiVnmxTS8-BremfKfKZfygZ7N8AS3oeGDNO8EPe3k5LyldNPIoZTU1Q6w5GE8sJDP1qzbumYCfnBFSSKANAX71hM75lsNPnP8UU-cVa8uV72sLsAI7U6TuuY");'></div>
+<div class="flex flex-col gap-1">
+<p class="text-text-dark text-2xl font-bold leading-tight line-clamp-1">Apex</p>
+<p class="text-text-muted-dark text-base">Reach the ultimate challenge.</p>
+</div>
+</a>
+<a class="flex flex-col gap-4 group" href="#">
+<div class="bg-cover bg-center rounded-xl aspect-video overflow-hidden transform group-hover:scale-105 transition-transform duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDEKnn3Ao-dIh-xD8Y88iJZKflAhGZeib5EE-VDKQ_Th5Tect5EBUDAo0NUbj9MWoHCDN5ZS7IbZdzg6idAh1SEZpb4nosSc-44ipDURnLDrashz_o6l8ClgVmIEVDYACRQtrSKfIH3_NBMIZpqH5rYWCcLkNCH3JbpEkXRIoWcCEJdEK_P5ySeLbjNMM9PiiyzCoQffQUTzPeqVD5e4JQbbk67d3O7Xai1vkSPaziLAYJjsbtcQ-uMm4nMahUkwW1ziDlO6IVlcAMm")'></div>
+<div class="flex flex-col gap-1">
+<p class="text-text-dark text-2xl font-bold leading-tight line-clamp-1">Slipstream</p>
+<p class="text-text-muted-dark text-base">High-speed futuristic racing.</p>
+</div>
+</a>
+<a class="flex flex-col gap-4 group" href="#">
+<div class="bg-cover bg-center rounded-xl aspect-video overflow-hidden transform group-hover:scale-105 transition-transform duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCrC53p62QkiNHOyTpNISli_mYvAmJ3JvXOwhi3QwjGH9V1kdfK-Muo9ip9128RVvmwxGspl-Fllxd2Oq-1y1uwhoeOGuqsNB4aOeudEWN93ObQ_6iNOdhTFJrwWXEK0S-heihGoCpEm1pMv6wgx9cgUPqMlfJoTcTdxm99WfgI9ZoLBZG5SH6S270xSSdHfzz8zitA62jbamGvt6WvpnxXk1AtKRzI6F_U4894_nT8gh-hZdtDKhuFGq7527Qa15dW3deynAsMCXlJ")'></div>
+<div class="flex flex-col gap-1">
+<p class="text-text-dark text-2xl font-bold leading-tight line-clamp-1">Block Builders</p>
+<p class="text-text-muted-dark text-base">Create amazing structures.</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+</main>
+<footer class="flex flex-col gap-8 px-5 py-12 text-center @container border-t border-solid border-t-surface-dark mt-16">
+<div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 @[480px]:flex-row @[480px]:justify-around">
+<a class="text-text-muted-dark text-base font-normal leading-normal min-w-40 hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-text-muted-dark text-base font-normal leading-normal min-w-40 hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="text-text-muted-dark text-base font-normal leading-normal min-w-40 hover:text-primary transition-colors" href="#">Contact Us</a>
+<a class="text-text-muted-dark text-base font-normal leading-normal min-w-40 hover:text-primary transition-colors" href="#">Parents</a>
+</div>
+<div class="flex flex-wrap justify-center gap-8 text-3xl">
+<a href="#">
+<div class="text-text-muted-dark hover:text-primary transition-colors">
+<svg fill="currentColor" height="1em" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.46 6c-.77.35-1.6.58-2.46.67c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79C2.63 5.42 2.42 6.16 2.42 6.94c0 1.49.76 2.81 1.91 3.56c-.71 0-1.37-.22-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z"></path>
+</svg>
+</div>
+</a>
+<a href="#">
+<div class="text-text-muted-dark hover:text-primary transition-colors">
+<svg fill="currentColor" height="1em" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96c0 4.86 3.45 8.92 8.01 9.8v-7H7.9v-2.8h2.15V9.95c0-2.12 1.25-3.3 3.18-3.3c.9 0 1.85.17 1.85.17v2.4H13.8c-1.03 0-1.38.62-1.38 1.32v1.6h2.77l-.44 2.8H12.42v7.01c4.56-.88 8.01-4.94 8.01-9.81C21.96 6.5 17.5 2.04 12 2.04Z"></path>
+</svg>
+</div>
+</a>
+<a href="#">
+<div class="text-text-muted-dark hover:text-primary transition-colors">
+<svg fill="currentColor" height="1em" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm4.6 3a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Zm6.2-3a1.2 1.2 0 1 1 0 2.4a1.2 1.2 0 0 1 0-2.4Z"></path>
+</svg>
+</div>
+</a>
+</div>
+<p class="text-text-muted-dark text-base font-normal leading-normal">© 2023 FunZone Games. All rights reserved.</p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>
